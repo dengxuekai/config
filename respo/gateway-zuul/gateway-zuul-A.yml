@@ -1,0 +1,20 @@
+server:
+  port: 8085
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka/
+
+zuul:
+  routes:
+    consumer:
+      path: /consumer/**
+      service-id: consumer
+    provider:
+      path: /provider/**
+      service-id: provider
+
+ribbon:
+  eager-load:
+    enabled: true
