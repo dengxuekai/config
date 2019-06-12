@@ -22,4 +22,4 @@ management:
     health:
       show-details: ALWAYS
 
-version: AAA
+version: AAA-DEV
